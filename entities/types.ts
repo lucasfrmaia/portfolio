@@ -14,7 +14,8 @@ export type TRandomIcon =
    | "Linkedin"
    | "Twitter"
    | "Git"
-   | "NextJs";
+   | "NextJs"
+   | "VSCode";
 
 export interface IPortfolio {
    name: string;
@@ -55,11 +56,36 @@ export interface IPortfolio {
          date: string;
          text: string;
       }>;
-      skills: Array<{
-         title: string;
-         icons: string[];
-         description: string;
-      }>;
+      skills: {
+         frontend: {
+            title: string;
+            skills: Array<{
+               name: string;
+               icon: TRandomIcon;
+            }>;
+         };
+         backend: {
+            title: string;
+            skills: Array<{
+               name: string;
+               icon: TRandomIcon;
+            }>;
+         };
+         database: {
+            title: string;
+            skills: Array<{
+               name: string;
+               icon: TRandomIcon;
+            }>;
+         };
+         tools: {
+            title: string;
+            skills: Array<{
+               name: string;
+               icon: TRandomIcon;
+            }>;
+         };
+      };
       projects: Array<{
          name: string;
          github?: string;

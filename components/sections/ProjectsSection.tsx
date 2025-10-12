@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
 import {
    Card,
@@ -9,10 +10,11 @@ import {
    CardTitle,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink, Github, Info } from "lucide-react";
 import { portfolio } from "@/entities/const";
 import Image from "next/image";
 import Link from "next/link";
+import ProjectModal from "@/components/projects/ProjectModal";
 
 const fadeInUp = {
    initial: { y: 20, opacity: 0 },
@@ -20,6 +22,7 @@ const fadeInUp = {
 };
 
 export default function ProjectsSection() {
+   const [selectedProject, setSelectedProject] = useState<typeof portfolio.data.projects[0] | null>(null);
    return (
       <section id="projects" className="py-16">
          <div className="container px-4">
@@ -55,7 +58,9 @@ export default function ProjectsSection() {
                               />
                            ) : (
                               <div className="w-full h-full bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center">
-                                 <span className="text-xl font-semibold text-primary/60">{project.name}</span>
+                                 <span className="text-xl font-semibold text-primary/60">
+                                    {project.name}
+                                 </span>
                               </div>
                            )}
                         </div>
@@ -81,6 +86,13 @@ export default function ProjectsSection() {
                         </CardContent>
 
                         <CardFooter className="flex gap-4">
+                           <Button 
+                              variant="outline" 
+                              size="sm"
+                              onClick={() => setSelectedProject(project)}
+                           >
+                              <Info className="h-4 w-4 mr-2" /> Detalhes
+                           </Button>
                            {project.github && (
                               <Button variant="secondary" size="sm" asChild>
                                  <Link href={project.github} target="_blank">
@@ -91,8 +103,7 @@ export default function ProjectsSection() {
                            {project.liveDemo && (
                               <Button size="sm" asChild>
                                  <Link href={project.liveDemo} target="_blank">
-                                    <ExternalLink className="h-4 w-4 mr-2" />{" "}
-                                    Demo
+                                    <ExternalLink className="h-4 w-4 mr-2" /> Demo
                                  </Link>
                               </Button>
                            )}
@@ -102,6 +113,14 @@ export default function ProjectsSection() {
                ))}
             </div>
          </div>
+
+         {selectedProject && (
+            <ProjectModal
+               isOpen={!!selectedProject}
+               onClose={() => setSelectedProject(null)}
+               project={selectedProject}
+            />
+         )}
       </section>
    );
 }

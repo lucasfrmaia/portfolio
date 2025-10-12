@@ -102,7 +102,10 @@ export default function HeroSection() {
                transition={{ duration: 0.5 }}
             >
                <div className="relative w-64 h-64 mx-auto bg-gradient-to-br from-indigo-500 to-purple-600 rounded-full flex items-center justify-center text-4xl font-bold text-white">
-                  {portfolio.name.split(' ').map(n => n[0]).join('')}
+                  {portfolio.name
+                     .split(" ")
+                     .map((n) => n[0])
+                     .join("")}
                </div>
             </motion.div>
          </div>

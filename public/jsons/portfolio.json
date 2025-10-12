@@ -19,6 +19,41 @@
          "timeline": "Linha do Tempo",
          "projects": "Projetos"
       },
+      "skills": {
+         "frontend": {
+            "title": "FRONTEND",
+            "skills": [
+               { "name": "HTML", "icon": "HTML" },
+               { "name": "CSS", "icon": "CSS" },
+               { "name": "JavaScript", "icon": "JavaScript" },
+               { "name": "TypeScript", "icon": "TypeScript" },
+               { "name": "React", "icon": "React" },
+               { "name": "Next.js", "icon": "NextJs" }
+            ]
+         },
+         "backend": {
+            "title": "BACKEND",
+            "skills": [
+               { "name": "Node.js", "icon": "NodeJs" },
+               { "name": "Express.js", "icon": "ExpressJs" },
+               { "name": "Python", "icon": "Python" },
+               { "name": "Java", "icon": "Java" },
+               { "name": "C", "icon": "C" }
+            ]
+         },
+         "database": {
+            "title": "DATABASE",
+            "skills": [{ "name": "MongoDB", "icon": "MongoDB" }]
+         },
+         "tools": {
+            "title": "TOOLS",
+            "skills": [
+               { "name": "Git", "icon": "Git" },
+               { "name": "GitHub", "icon": "Github" },
+               { "name": "VS Code", "icon": "VSCode" }
+            ]
+         }
+      },
       "about": {
          "presetation": "Olá, Eu sou o",
          "profession": {
@@ -47,33 +82,6 @@
             "title": "Área de Web",
             "date": "15/01/2023",
             "text": "Conheci e começei os estudos de progamação web."
-         }
-      ],
-      "skills": [
-         {
-            "title": "HTML, CSS & Javascript",
-            "icons": ["HTML", "CSS", "JavaScript"],
-            "description": "Possuo amplo conhecimento em HTML e CSS para a criação de interfaces atraentes e responsivas. No JavaScript, possuo habilidades avançadas, incluindo o domínio de tópicos avançados como Promises, async/await, e manipulação eficiente de eventos."
-         },
-         {
-            "title": "Next JS & Typescript",
-            "icons": ["NextJs", "TypeScript"],
-            "description": "Desenvolvo aplicações web modernas e eficientes utilizando NextJS e Typescript. Tenho experiencia avançada com Typescript e média com NextJS"
-         },
-         {
-            "title": "Python, Java & C",
-            "icons": ["Python", "Java", "C"],
-            "description": "Em Python, domino a sintaxe e sou experiente em bibliotecas como Pandas e Matplotlib para manipulação e visualização de dados. Em Java, possuo conhecimento completo em programação orientada a objetos. Em C, tenho familiaridade com sintaxe e conceitos básicos, com ênfase na manipulação de arquivos."
-         },
-         {
-            "title": "Git & Github",
-            "icons": ["Git", "Github"],
-            "description": "Sou proficiente no uso do Git, realizando operações como pull requests e gerenciamento de branches. Tenho experiência na hospedagem de repositórios no Github e compreendo os conceitos fundamentais de controle de versão."
-         },
-         {
-            "title": "Mongo DB",
-            "icons": ["MongoDB"],
-            "description": "Possuo habilidades em manipulação de dados no MongoDB, incluindo operações CRUD."
          }
       ],
       "projects": [
