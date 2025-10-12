@@ -29,4 +29,5 @@ export const TRandomIconColors: Record<TRandomIcon, string> = {
    Linkedin: "#FFFFFF",
    Git: "#f05033",
    Twitter: "#FFFFFF",
+   VSCode: "#007ACC",
 } as const;
