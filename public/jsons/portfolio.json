@@ -1,9 +1,9 @@
 {
    "name": "Lucas Maia",
    "socials": {
-      "github": "https://github.com/yLexter/Exercicios",
+      "github": "https://github.com/lucasfrmaia/Exercicios",
       "linkedin": "https://www.linkedin.com/in/lucas-ferreira-maia-82a25b263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      "twitter": "https://twitter.com/yLexter1"
+      "twitter": "https://twitter.com/lucasfrmaia1"
    },
    "data": {
       "naveBar": {
@@ -87,16 +87,14 @@
       "projects": [
          {
             "name": "Projetos/Exercícios",
-            "github": "https://github.com/yLexter/Exercicios",
-            "images": [
-               "https://istack.iium.edu.my/uploads/images/gallery/2021-04/scaled-1680-/projects-concept-black-chalkboard-d-rendering-handwritten-top-view-office-desk-lot-business-office-supplies-79906734.jpg"
-            ],
+            "github": "https://github.com/lucasfrmaia/cc-uepb",
+            "images": ["/images/projects/cc-uepb/Screenshot_1.jpg"],
             "description": "Todos os meus exercícios e projetos feitos ao longo do curso de ciências da computação da UEPB",
             "languages": ["Python", "Java", "C"]
          },
          {
             "name": "Bot Para Discord",
-            "github": "https://github.com/yLexter/botyLexter",
+            "github": "https://github.com/lucasfrmaia/botlucasfrmaia",
             "images": [
                "https://appmaster.io/cdn-cgi/image/width=768,quality=83,format=auto/api/_files/KQtkEi6WmzvGz7ACPAghma/download/"
             ],
@@ -104,19 +102,11 @@
             "languages": ["NodeJs", "MongoDB"]
          },
          {
-            "name": "ToDo List (Construção)",
-            "github": "https://github.com/yLexter/ToDoList",
-            "images": [
-               "https://t3.ftcdn.net/jpg/01/10/01/90/240_F_110019055_JBbr778hMxpwuwDaFszyQNck5PhBYHli.jpg"
-            ],
-            "description": "Este projeto é um aplicativo da web de gerenciamento de lista de tarefas, projetado para ajudar os usuários a acompanhar suas tarefas diárias de maneira eficiente e organizada. A aplicação permite que os usuários criem, editem, excluam e marquem tarefas como concluídas",
-            "languages": ["TypeScript", "MongoDB", "NextJs"]
-         },
-         {
             "name": "Github Profile",
-            "github": "https://github.com/yLexter/github-profile",
+            "github": "https://github.com/lucasfrmaia/github-profile",
             "images": [
-               "https://camo.githubusercontent.com/6ed76215ecec9edf6cf26ef790a8acd0a2c892462160a58f67d43d564fe1591e/68747470733a2f2f692e6962622e636f2f733150736b67312f696d6167656d2d323032342d30322d32342d3032313332353439332e706e67"
+               "/images/projects/github-profile/image-1.png",
+               "/images/projects/github-profile/image-2.png"
             ],
             "description": "O projeto GitHub Profile é uma aplicação web desenvolvida com Next.js que permite buscar dados de usuários do GitHub de forma simplificada. Com esta aplicação, você pode obter informações básicas sobre um usuário do GitHub, como nome, foto de perfil, número de seguidores e repositórios públicos.",
             "languages": ["TypeScript", "NextJs"]
@@ -129,6 +119,29 @@
             ],
             "description": "WikiDarius é uma plataforma online dedicada a criar uma comunidade de jogadores apaixonados de League of Legends (LoL), com um foco especial no campeão Darius.",
             "languages": ["TypeScript", "MongoDB", "NextJs"]
+         },
+         {
+            "name": "Blog",
+            "github": "https://github.com/lucasfrmaia/blog",
+            "description": "Blog Pessoal onde escrevo sobre tecnologia, programação e outros assuntos.",
+            "languages": ["TypeScript", "MongoDB", "NextJs"],
+            "images": [
+               "/images/projects/blog/Screenshot_1.png",
+               "/images/projects/blog/Screenshot_2.png",
+               "/images/projects/blog/Screenshot_3.png"
+            ]
+         },
+         {
+            "name": "Quiosque",
+            "github": "https://github.com/lucasfrmaia/quiosque",
+            "description": "Quisoque para gerenciar produtos, estoques, notas fiscais e vendas.",
+            "languages": ["NextJs", "TypeScript"],
+            "images": [
+               "/images/projects/quiosque/Screenshot_1.png",
+               "/images/projects/quiosque/Screenshot_2.png",
+               "/images/projects/quiosque/Screenshot_3.png",
+               "/images/projects/quiosque/Screenshot_4.png"
+            ]
          }
       ]
    }

@@ -22,7 +22,9 @@ const fadeInUp = {
 };
 
 export default function ProjectsSection() {
-   const [selectedProject, setSelectedProject] = useState<typeof portfolio.data.projects[0] | null>(null);
+   const [selectedProject, setSelectedProject] = useState<
+      (typeof portfolio.data.projects)[0] | null
+   >(null);
    return (
       <section id="projects" className="py-16">
          <div className="container px-4">
@@ -86,13 +88,6 @@ export default function ProjectsSection() {
                         </CardContent>
 
                         <CardFooter className="flex gap-4">
-                           <Button 
-                              variant="outline" 
-                              size="sm"
-                              onClick={() => setSelectedProject(project)}
-                           >
-                              <Info className="h-4 w-4 mr-2" /> Detalhes
-                           </Button>
                            {project.github && (
                               <Button variant="secondary" size="sm" asChild>
                                  <Link href={project.github} target="_blank">
@@ -103,10 +98,18 @@ export default function ProjectsSection() {
                            {project.liveDemo && (
                               <Button size="sm" asChild>
                                  <Link href={project.liveDemo} target="_blank">
-                                    <ExternalLink className="h-4 w-4 mr-2" /> Demo
+                                    <ExternalLink className="h-4 w-4 mr-2" />{" "}
+                                    Demo
                                  </Link>
                               </Button>
                            )}
+                           <Button
+                              variant="outline"
+                              size="sm"
+                              onClick={() => setSelectedProject(project)}
+                           >
+                              <Info className="h-4 w-4 mr-2" /> Detalhes
+                           </Button>
                         </CardFooter>
                      </Card>
                   </motion.div>
