@@ -1,4 +1,8 @@
 import { TRandomIcon } from "./types";
+import portfolioData from "../public/jsons/portfolio.json";
+import { IPortfolio } from "./types";
+
+export const portfolio = portfolioData as IPortfolio;
 
 export const CSectionNames = {
    main: "main",
@@ -7,17 +11,6 @@ export const CSectionNames = {
    timeline: "timeline",
    projects: "projects",
 } as const;
-
-export const CLanguages = {
-   pt_BR: {
-      code: "pt_BR",
-      label: "Português Brasileiro",
-   },
-   en_US: {
-      code: "en_US",
-      label: "English",
-   },
-};
 
 export const TRandomIconColors: Record<TRandomIcon, string> = {
    JavaScript: "#F7DF1E",

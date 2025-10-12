@@ -1,23 +1,21 @@
-import Image from "next/image";
-import Header from "../components/header/Header";
-import Main from "../components/main/Main";
-import Projects from "../components/projects/Projects";
-import AboutMe from "../components/about-me/AboutMe";
-import Footer from "../components/footer/Footer";
-import Timeline from "../components/timeline/Timeline";
-import Skills from "../components/skills/Skills";
-import ContextProvider from "@/contexts/ContextProvider";
+import HeroSection from "@/components/sections/HeroSection";
+import SkillsSection from "@/components/sections/SkillsSection";
+import ProjectsSection from "@/components/sections/ProjectsSection";
+import TimelineSection from "@/components/sections/TimelineSection";
+import ContactSection from "@/components/sections/ContactSection";
+import Footer from "@/components/layout/Footer";
 
 export default function App() {
    return (
-      <ContextProvider>
-         <Header />
-         <Main />
-         <AboutMe />
-         <Skills />
-         <Timeline />
-         <Projects />
+      <>
+         <main className="space-y-24">
+            <HeroSection />
+            <SkillsSection />
+            <ProjectsSection />
+            <TimelineSection />
+            <ContactSection />
+         </main>
          <Footer />
-      </ContextProvider>
+      </>
    );
 }

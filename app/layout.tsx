@@ -1,12 +1,14 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { Inter as FontSans } from "next/font/google";
 import { cn } from "../lib/utils";
+import { ThemeProvider } from "@/components/theme/theme-provider";
+import Header from "@/components/layout/Header";
 
-export const fontSans = FontSans({
+const inter = Inter({
    subsets: ["latin"],
-   variable: "--font-sans",
+   display: "swap",
+   variable: "--font-inter",
 });
 
 export const metadata: Metadata = {
@@ -73,14 +75,14 @@ export default function RootLayout({
    children: React.ReactNode;
 }) {
    return (
-      <html lang="en">
+      <html lang="pt" className={inter.variable}>
          <body
-            className={cn(
-               "min-h-screen bg-background font-sans antialiased",
-               fontSans.variable
-            )}
+            className={cn("min-h-screen bg-background font-sans antialiased")}
          >
-            {children}
+            <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+               <Header />
+               {children}
+            </ThemeProvider>
          </body>
       </html>
    );
