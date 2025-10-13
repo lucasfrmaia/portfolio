@@ -1,8 +1,7 @@
 import { TRandomIcon } from "./types";
 import portfolioData from "../public/jsons/portfolio.json";
-import { IPortfolio } from "./types";
 
-export const portfolio = portfolioData as IPortfolio;
+export const portfolio = portfolioData;
 
 export const CSectionNames = {
    main: "main",

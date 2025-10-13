@@ -1,8 +1,8 @@
 import HeroSection from "@/components/sections/HeroSection";
 import SkillsSection from "@/components/sections/SkillsSection";
 import ProjectsSection from "@/components/sections/ProjectsSection";
-import TimelineSection from "@/components/sections/TimelineSection";
 import Footer from "@/components/layout/Footer";
+import TimelineSection from "@/components/sections/TimelineSection";
 
 export default function App() {
    return (

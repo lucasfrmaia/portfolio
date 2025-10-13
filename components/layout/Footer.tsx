@@ -2,6 +2,8 @@
 
 import { portfolio } from "@/entities/const";
 import Link from "next/link";
+import SocialButtons from "../ui/SocialButtons";
+import ScrollToTop from "../ui/ScrollToTop";
 
 export default function Footer() {
    const currentYear = new Date().getFullYear();
@@ -9,12 +11,13 @@ export default function Footer() {
    return (
       <footer className="py-8 border-t">
          <div className="container px-4">
-            <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-               <div className="flex flex-col items-center md:items-start gap-2">
+            <div className="flex flex-col md:flex-row justify-between items-center gap-8">
+               <div className="flex flex-col items-center md:items-start gap-4">
                   <p className="text-sm text-muted-foreground">
                      © {currentYear} {portfolio.name}. Todos os direitos
                      reservados.
                   </p>
+                  <SocialButtons />
                </div>
 
                <nav className="flex gap-8">
@@ -31,12 +34,14 @@ export default function Footer() {
                   )}
                </nav>
 
-               <p className="text-sm text-muted-foreground">
-                  Desenvolvido com Next.js, TypeScript, Tailwind CSS, e
-                  shadcn/ui
-               </p>
+               <div className="text-center">
+                  <p className="text-sm text-muted-foreground">
+                     Portfolio Lucas Maia
+                  </p>
+               </div>
             </div>
          </div>
+         <ScrollToTop />
       </footer>
    );
 }

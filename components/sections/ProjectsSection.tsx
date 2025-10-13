@@ -15,6 +15,7 @@ import { portfolio } from "@/entities/const";
 import Image from "next/image";
 import Link from "next/link";
 import ProjectModal from "@/components/projects/ProjectModal";
+import { FaGithub } from "react-icons/fa";
 
 const fadeInUp = {
    initial: { y: 20, opacity: 0 },
@@ -55,7 +56,7 @@ export default function ProjectsSection() {
                                  alt={project.name}
                                  fill
                                  className="object-cover transition-transform duration-300 group-hover:scale-110"
-                                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                 sizes="(max-width: 1080px) 100vw, (max-width: 1920px) 50vw, 33vw"
                                  quality={75}
                               />
                            ) : (
@@ -91,7 +92,7 @@ export default function ProjectsSection() {
                            {project.github && (
                               <Button variant="secondary" size="sm" asChild>
                                  <Link href={project.github} target="_blank">
-                                    <Github className="h-4 w-4 mr-2" /> Código
+                                    <FaGithub className="h-4 w-4 mr-2" /> Código
                                  </Link>
                               </Button>
                            )}

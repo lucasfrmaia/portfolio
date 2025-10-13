@@ -87,34 +87,7 @@ export default function SkillsSection() {
                </p>
             </motion.div>
 
-            <div className="grid lg:grid-cols-[300px,1fr] gap-12">
-               {/* Categories */}
-               <motion.div
-                  variants={containerAnimation}
-                  initial="initial"
-                  whileInView="animate"
-                  viewport={{ once: true }}
-                  className="space-y-6"
-               >
-                  {skillCategories.map(({ key, color }) => (
-                     <motion.div
-                        key={key}
-                        variants={fadeInUp}
-                        className="relative"
-                     >
-                        <h3
-                           className={cn(
-                              "text-3xl font-extrabold tracking-wider",
-                              "bg-clip-text text-transparent bg-gradient-to-r",
-                              color
-                           )}
-                        >
-                           {portfolio.data.skills[key].title}
-                        </h3>
-                     </motion.div>
-                  ))}
-               </motion.div>
-
+            <div className="grid lg:grid-cols-[1fr] gap-12">
                {/* Skills Grid */}
                <motion.div
                   variants={containerAnimation}
@@ -126,6 +99,15 @@ export default function SkillsSection() {
                   {skillCategories.map(({ key, color }) => (
                      <motion.div key={key} variants={fadeInUp}>
                         <Card className="p-6 bg-card/50 backdrop-blur border-border">
+                           <h3
+                              className={cn(
+                                 "text-3xl font-extrabold tracking-wider",
+                                 "bg-clip-text text-transparent bg-gradient-to-r mb-10",
+                                 color
+                              )}
+                           >
+                              {portfolio.data.skills[key].title}
+                           </h3>
                            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
                               {portfolio.data.skills[key].skills.map(
                                  (skill) => {

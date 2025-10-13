@@ -1,54 +1,57 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { portfolio } from "@/entities/const";
-
-const fadeInUp = {
-   initial: { y: 20, opacity: 0 },
-   animate: { y: 0, opacity: 1 },
-};
+import { motion } from "framer-motion";
+import { Briefcase } from "lucide-react";
+import SectionTitle from "../ui/SectionTitle";
 
 export default function TimelineSection() {
    return (
-      <section className="py-16 bg-gradient-to-b from-background to-secondary/10">
-         <div className="container px-4">
-            <motion.h2
-               className="text-3xl font-bold text-center mb-12"
-               initial={{ opacity: 0 }}
-               whileInView={{ opacity: 1 }}
-               viewport={{ once: true }}
-            >
-               {portfolio.data.sectionTitle.timeline}
-            </motion.h2>
+      <section
+         id="timeline"
+         className="relative overflow-hidden py-24 bg-[#0c0c0c]"
+      >
+         <div className="container mx-auto">
+            <SectionTitle>Timeline</SectionTitle>
 
-            <div className="max-w-3xl mx-auto">
-               {portfolio.data.timeline.map((item, index) => (
-                  <motion.div
-                     key={item.title}
-                     className="flex gap-4 mb-8"
-                     variants={fadeInUp}
-                     initial="initial"
-                     whileInView="animate"
-                     viewport={{ once: true }}
-                     transition={{ delay: index * 0.1 }}
-                  >
-                     <div className="flex flex-col items-center">
-                        <div className="w-3 h-3 rounded-full bg-primary" />
-                        {index !== portfolio.data.timeline.length - 1 && (
-                           <div className="w-0.5 h-full bg-border" />
-                        )}
-                     </div>
-                     <div className="flex-1 bg-card p-6 rounded-lg shadow-md">
-                        <h3 className="font-semibold text-lg mb-2">
-                           {item.title}
-                        </h3>
-                        <p className="text-sm text-muted-foreground mb-2">
-                           {item.date}
-                        </p>
-                        <p className="text-muted-foreground">{item.text}</p>
-                     </div>
-                  </motion.div>
-               ))}
+            <div className="mt-16 relative">
+               {/* Line */}
+               <div className="absolute left-8 top-0 bottom-0 w-[1px] bg-gray-700" />
+
+               {/* Timeline Items */}
+               <div className="space-y-12">
+                  {portfolio.data.timeline.map((item, index) => (
+                     <motion.div
+                        key={index}
+                        initial={{ opacity: 0, x: -50 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.5, delay: index * 0.2 }}
+                        className="relative pl-16 group"
+                     >
+                        {/* Icon */}
+                        <div className="absolute left-0 p-3 rounded-full bg-gray-800 border border-gray-700 group-hover:border-primary group-hover:text-primary transition-all duration-300">
+                           <Briefcase size={24} />
+                        </div>
+
+                        {/* Content */}
+                        <div className="bg-gray-800/50 p-6 rounded-lg border border-gray-700 hover:translate-x-1 transition-all duration-300">
+                           <h3 className="text-xl font-semibold text-white">
+                              {item.title}
+                           </h3>
+                           <p className="text-gray-400 text-sm mt-1">
+                              {item.company}
+                           </p>
+                           <p className="text-blue-400 text-sm mt-1">
+                              {item.period}
+                           </p>
+                           <p className="text-gray-300 text-sm leading-relaxed mt-3">
+                              {item.description}
+                           </p>
+                        </div>
+                     </motion.div>
+                  ))}
+               </div>
             </div>
          </div>
       </section>

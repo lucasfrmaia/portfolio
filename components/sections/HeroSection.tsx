@@ -1,11 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Image from "next/image";
 import { portfolio } from "@/entities/const";
+import SocialButtons from "../ui/SocialButtons";
 
 const fadeInUp = {
    initial: { y: 20, opacity: 0 },
@@ -67,31 +67,8 @@ export default function HeroSection() {
                   </Button>
                </motion.div>
 
-               <motion.div
-                  variants={fadeInUp}
-                  className="flex items-center justify-center lg:justify-start gap-6 mt-8"
-               >
-                  <Link
-                     href={portfolio.socials.github}
-                     target="_blank"
-                     className="text-2xl hover:text-primary transition"
-                  >
-                     <FaGithub />
-                  </Link>
-                  <Link
-                     href={portfolio.socials.linkedin}
-                     target="_blank"
-                     className="text-2xl hover:text-primary transition"
-                  >
-                     <FaLinkedin />
-                  </Link>
-                  <Link
-                     href={portfolio.socials.twitter}
-                     target="_blank"
-                     className="text-2xl hover:text-primary transition"
-                  >
-                     <FaTwitter />
-                  </Link>
+               <motion.div variants={fadeInUp} className="mt-8">
+                  <SocialButtons className="justify-center lg:justify-start" />
                </motion.div>
             </motion.div>
 

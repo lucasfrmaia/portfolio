@@ -6,6 +6,26 @@
       "twitter": "https://twitter.com/lucasfrmaia1"
    },
    "data": {
+      "timeline": [
+         {
+            "title": "Desenvolvedor Full Stack",
+            "company": "TechCorp Solutions",
+            "period": "2024 - Presente",
+            "description": "Desenvolvimento de aplicações web utilizando React, Node.js e MongoDB. Implementação de novas features e manutenção de sistemas existentes."
+         },
+         {
+            "title": "Estágio em Desenvolvimento Web",
+            "company": "WebTech Innovations",
+            "period": "2023 - 2024",
+            "description": "Participação no desenvolvimento de projetos web, utilizando tecnologias modernas como React e Node.js. Colaboração em equipe e aprendizado constante."
+         },
+         {
+            "title": "Desenvolvedor Frontend Freelancer",
+            "company": "Projetos Independentes",
+            "period": "2022 - 2023",
+            "description": "Desenvolvimento de websites e aplicações web para diversos clientes. Foco em experiência do usuário e interfaces responsivas."
+         }
+      ],
       "naveBar": {
          "home": "Início",
          "aboutMe": "Sobre Mim",
@@ -67,23 +87,6 @@
             "aboutMe": "Sobre Mim"
          }
       },
-      "timeline": [
-         {
-            "title": "Primeiro contato com progamação",
-            "date": "05/06/2021",
-            "text": "Começei estudando Javascript e a fazer bots para dicosrd como hobbie."
-         },
-         {
-            "title": "Curso de Computação",
-            "date": "23/04/2022",
-            "text": "Entrei para o curso de computação para UEPB."
-         },
-         {
-            "title": "Área de Web",
-            "date": "15/01/2023",
-            "text": "Conheci e começei os estudos de progamação web."
-         }
-      ],
       "projects": [
          {
             "name": "Projetos/Exercícios",
