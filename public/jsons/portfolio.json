@@ -8,22 +8,28 @@
    "data": {
       "timeline": [
          {
-            "title": "Desenvolvedor Full Stack",
-            "company": "TechCorp Solutions",
-            "period": "2024 - Presente",
-            "description": "Desenvolvimento de aplicações web utilizando React, Node.js e MongoDB. Implementação de novas features e manutenção de sistemas existentes."
+            "title": "Curso de Computação",
+            "company": "UEPB - Universidade Estadual da Paraíba",
+            "period": "04/2022 - Atualmente (7º Período)",
+            "description": "Atualmente cursando o bacharelado em Ciência da Computação na Universidade Estadual da Paraíba (UEPB)."
          },
          {
-            "title": "Estágio em Desenvolvimento Web",
-            "company": "WebTech Innovations",
-            "period": "2023 - 2024",
-            "description": "Participação no desenvolvimento de projetos web, utilizando tecnologias modernas como React e Node.js. Colaboração em equipe e aprendizado constante."
+            "title": "E-Cidade - Desenvolvedor Frontend",
+            "company": "Núcleo de Tecnologias Estratégicas em Saúde (NUTES)",
+            "period": "11/04/2024 - 02/10/2024",
+            "description": "Atuei na manutenção em um sistema legados em PHP (E-cidade), utilizada por prefeituras para gestão pública. Responsável por corrigir bugs, aprimorar interfaces e implementar novas funcionalidades."
          },
          {
-            "title": "Desenvolvedor Frontend Freelancer",
-            "company": "Projetos Independentes",
-            "period": "2022 - 2023",
-            "description": "Desenvolvimento de websites e aplicações web para diversos clientes. Foco em experiência do usuário e interfaces responsivas."
+            "title": "DataSUS - Engenheiro de Dados",
+            "company": "Núcleo de Tecnologias Estratégicas em Saúde (NUTES)",
+            "period": "09/04/2024 - 01/12/2024",
+            "description": "Fui responsável pela estruturação, tratamento e disponibilização de dados do DATASUS para um time análise de dados. Desenvolvimento e manutenção de pipelines de dados  utilizando Apache Airflow, com integração ao MinIO (armazenamento compatível com S3) e ao Apache Atlas para governança, rastreabilidade e catalogação de metadados."
+         },
+         {
+            "title": "SEFAZ - Engenheiro de Dados",
+            "company": "Núcleo de Tecnologias Estratégicas em Saúde (NUTES)",
+            "period": "30/07/2024 - Atualmente",
+            "description": "Estou atuando no desenvolvimento de pipelines de dados em Apache Airflow, com foco de processas notas fiscais."
          }
       ],
       "naveBar": {
@@ -82,11 +88,9 @@
       "about": {
          "presetation": "Olá, Eu sou o",
          "profession": {
-            "presetation": "Eu sou um",
-            "profession": "Desenvolvedor Web"
+            "profession": "Desenvolvedor de Software/Engenharia de Dados"
          },
-         "resume": "Sou um entusiasta da tecnologia e desde o momento em que descobri o maravilhoso universo da programação, tenho mergulhado de cabeça em projetos e desafios.",
-         "aboutMe": "Me chamo Lucas Ferreira Maia, tenho 20 anos, moro em Campina Grande - PB e desde criança sempre tive uma paixão por matemática e tecnologias que me fez entrar no curso computação na Universidade Estadual da Paraíba (UEPB). Atualmente estou na procura da minha primeira vaga como desenvolvedor.",
+         "resume": "Olá! Me chamo Lucas Ferreira Maia, tenho 20 anos e moro em Campina Grande - PB.  Atualmente, estou em busca da minha primeira oportunidade como desenvolvedor, onde eu possa aprender ainda mais, ganhar experiência prática e contribuir d para projetos.",
          "buttons": {
             "cv": "Meu CV",
             "aboutMe": "Sobre Mim"

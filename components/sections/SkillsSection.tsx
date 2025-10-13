@@ -29,6 +29,7 @@ import {
    SiSqlalchemy,
 } from "react-icons/si";
 import { FaAtlas, FaDocker } from "react-icons/fa";
+import SectionTitle from "../ui/SectionTitle";
 
 const iconComponents: Record<TRandomIcon, React.ElementType> = {
    JavaScript: SiJavascript,
@@ -88,9 +89,7 @@ export default function SkillsSection() {
                viewport={{ once: true }}
                className="text-center mb-16"
             >
-               <h2 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-purple-600 mb-4">
-                  Skills
-               </h2>
+               <SectionTitle>Skills</SectionTitle>
                <p className="text-muted-foreground max-w-2xl mx-auto">
                   Tecnologias e ferramentas que utilizo no desenvolvimento dos
                   meus projetos

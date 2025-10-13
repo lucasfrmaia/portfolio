@@ -14,7 +14,7 @@ const fadeInUp = {
 
 export default function HeroSection() {
    return (
-      <section className="min-h-screen flex items-center justify-center bg-hero-gradient dark:bg-none dark:bg-background pt-16">
+      <section className="min-h-screen flex items-center justify-center bg-background pt-16">
          <div className="container px-4 flex flex-col lg:flex-row items-center justify-between">
             <motion.div
                className="flex-1 text-center lg:text-left"
@@ -24,7 +24,7 @@ export default function HeroSection() {
             >
                <motion.div
                   variants={fadeInUp}
-                  className="text-lg text-muted-foreground mb-2"
+                  className="text-lg text-muted-foreground mb-1"
                >
                   {portfolio.data.about.presetation}
                </motion.div>
@@ -78,11 +78,15 @@ export default function HeroSection() {
                animate={{ opacity: 1, scale: 1 }}
                transition={{ duration: 0.5 }}
             >
-               <div className="relative w-64 h-64 mx-auto bg-gradient-to-br from-indigo-500 to-purple-600 rounded-full flex items-center justify-center text-4xl font-bold text-white">
-                  {portfolio.name
-                     .split(" ")
-                     .map((n) => n[0])
-                     .join("")}
+               <div className="hidden lg:block w-full max-w-[500px] mx-auto">
+                  <div className="relative w-full aspect-square">
+                     <Image
+                        src="/images/apresentacao.png"
+                        alt="Imagem de Apresentação"
+                        fill
+                        className="object-contain"
+                     />
+                  </div>
                </div>
             </motion.div>
          </div>

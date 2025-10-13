@@ -23,9 +23,9 @@ export default function SectionTitle({
          whileInView={{ opacity: 1, y: 0 }}
          viewport={{ once: true }}
       >
-         <span className="bg-gradient-to-r from-purple-500 to-purple-800 bg-clip-text text-transparent font-mono">
+         <h1 className="bg-gradient-to-r from-purple-500 to-purple-800 bg-clip-text text-transparent font-mono mb-4">
             {children}
-         </span>
+         </h1>
          <motion.div
             className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-purple-500 to-purple-800 rounded-full"
             initial={{ scaleX: 0 }}

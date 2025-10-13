@@ -16,7 +16,8 @@ import Image from "next/image";
 import Link from "next/link";
 import ProjectModal from "@/components/projects/ProjectModal";
 import { FaGithub } from "react-icons/fa";
-import { Badge } from "../ui/badge";
+import LanguageBadge from "../ui/LanguageBadge";
+import SectionTitle from "../ui/SectionTitle";
 
 const fadeInUp = {
    initial: { y: 20, opacity: 0 },
@@ -30,14 +31,9 @@ export default function ProjectsSection() {
    return (
       <section id="projects" className="py-16">
          <div className="container px-4">
-            <motion.h2
-               className="text-3xl font-bold text-center mb-12"
-               initial={{ opacity: 0 }}
-               whileInView={{ opacity: 1 }}
-               viewport={{ once: true }}
-            >
+            <SectionTitle className="mb-10">
                {portfolio.data.sectionTitle.projects}
-            </motion.h2>
+            </SectionTitle>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                {portfolio.data.projects.map((project, index) => (
@@ -79,9 +75,7 @@ export default function ProjectsSection() {
                            </p>
                            <div className="flex flex-wrap gap-2 mt-4">
                               {project.languages.map((tech) => (
-                                 <Badge variant="outline" key={tech}>
-                                    {tech}
-                                 </Badge>
+                                 <LanguageBadge key={tech} name={tech} />
                               ))}
                            </div>
                         </CardContent>
