@@ -29,4 +29,9 @@ export const TRandomIconColors: Record<TRandomIcon, string> = {
    Git: "#f05033",
    Twitter: "#FFFFFF",
    VSCode: "#007ACC",
+   "Apache Airflow": "#017CEE",
+   "Apache Atlas": "#017CEE",
+   "Apache Spark": "#E25A1C",
+   Docker: "#2496ED",
+   SQL: "#F29111",
 } as const;

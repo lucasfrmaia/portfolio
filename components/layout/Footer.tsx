@@ -14,10 +14,8 @@ export default function Footer() {
             <div className="flex flex-col md:flex-row justify-between items-center gap-8">
                <div className="flex flex-col items-center md:items-start gap-4">
                   <p className="text-sm text-muted-foreground">
-                     © {currentYear} {portfolio.name}. Todos os direitos
-                     reservados.
+                     © {currentYear} {portfolio.name}.
                   </p>
-                  <SocialButtons />
                </div>
 
                <nav className="flex gap-8">
@@ -35,9 +33,7 @@ export default function Footer() {
                </nav>
 
                <div className="text-center">
-                  <p className="text-sm text-muted-foreground">
-                     Portfolio Lucas Maia
-                  </p>
+                  <SocialButtons />
                </div>
             </div>
          </div>

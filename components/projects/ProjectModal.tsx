@@ -6,6 +6,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Badge } from "../ui/badge";
 
 interface ProjectModalProps {
    isOpen: boolean;
@@ -102,12 +103,9 @@ export default function ProjectModal({
 
                <div className="flex flex-wrap gap-2 mb-6">
                   {project.languages.map((tech) => (
-                     <span
-                        key={tech}
-                        className="px-3 py-1 text-sm rounded-full bg-primary/10 text-primary-foreground"
-                     >
+                     <Badge variant="outline" key={tech}>
                         {tech}
-                     </span>
+                     </Badge>
                   ))}
                </div>
 

@@ -23,7 +23,12 @@ import {
    SiVisualstudiocode,
    SiLinkedin,
    SiTwitter,
+   SiApacheairflow,
+   SiApachespark,
+   SiSqlite,
+   SiSqlalchemy,
 } from "react-icons/si";
+import { FaAtlas, FaDocker } from "react-icons/fa";
 
 const iconComponents: Record<TRandomIcon, React.ElementType> = {
    JavaScript: SiJavascript,
@@ -43,6 +48,11 @@ const iconComponents: Record<TRandomIcon, React.ElementType> = {
    VSCode: SiVisualstudiocode,
    Linkedin: SiLinkedin,
    Twitter: SiTwitter,
+   "Apache Airflow": SiApacheairflow,
+   "Apache Atlas": FaAtlas,
+   "Apache Spark": SiApachespark,
+   Docker: FaDocker,
+   SQL: SiSqlite,
 };
 
 const fadeInUp = {
@@ -65,7 +75,7 @@ export default function SkillsSection() {
    const skillCategories: SkillCategory[] = [
       { key: "frontend", color: "from-blue-500 to-cyan-500" },
       { key: "backend", color: "from-purple-500 to-pink-500" },
-      { key: "database", color: "from-green-500 to-emerald-500" },
+      { key: "data_enginner", color: "from-green-500 to-emerald-500" },
       { key: "tools", color: "from-orange-500 to-yellow-500" },
    ];
 
@@ -111,7 +121,10 @@ export default function SkillsSection() {
                            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
                               {portfolio.data.skills[key].skills.map(
                                  (skill) => {
-                                    const Icon = iconComponents[skill.icon];
+                                    const Icon =
+                                       iconComponents[
+                                          skill.icon as TRandomIcon
+                                       ];
                                     return (
                                        <motion.div
                                           key={skill.name}

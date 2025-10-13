@@ -15,4 +15,9 @@ export type TRandomIcon =
    | "Twitter"
    | "Git"
    | "NextJs"
-   | "VSCode";
+   | "VSCode"
+   | "Apache Atlas"
+   | "Apache Spark"
+   | "Apache Airflow"
+   | "Docker"
+   | "SQL";

@@ -1,7 +1,7 @@
 {
    "name": "Lucas Maia",
    "socials": {
-      "github": "https://github.com/lucasfrmaia/Exercicios",
+      "github": "https://github.com/lucasfrmaia",
       "linkedin": "https://www.linkedin.com/in/lucas-ferreira-maia-82a25b263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       "twitter": "https://twitter.com/lucasfrmaia1"
    },
@@ -61,16 +61,21 @@
                { "name": "C", "icon": "C" }
             ]
          },
-         "database": {
-            "title": "DATABASE",
-            "skills": [{ "name": "MongoDB", "icon": "MongoDB" }]
+         "data_enginner": {
+            "title": "Engenharia de Dados",
+            "skills": [
+               { "name": "SQL", "icon": "SQL" },
+               { "name": "Airflow", "icon": "Apache Airflow" },
+               { "name": "Apache Atlas", "icon": "Apache Atlas" },
+               { "name": "Apache Spark", "icon": "Apache Spark" }
+            ]
          },
          "tools": {
             "title": "TOOLS",
             "skills": [
                { "name": "Git", "icon": "Git" },
                { "name": "GitHub", "icon": "Github" },
-               { "name": "VS Code", "icon": "VSCode" }
+               { "name": "Docker", "icon": "Docker" }
             ]
          }
       },
@@ -97,7 +102,7 @@
          },
          {
             "name": "Bot Para Discord",
-            "github": "https://github.com/lucasfrmaia/botlucasfrmaia",
+            "github": "https://github.com/lucasfrmaia/discord-music-bot",
             "images": [
                "https://appmaster.io/cdn-cgi/image/width=768,quality=83,format=auto/api/_files/KQtkEi6WmzvGz7ACPAghma/download/"
             ],

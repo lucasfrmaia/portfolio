@@ -16,6 +16,7 @@ import Image from "next/image";
 import Link from "next/link";
 import ProjectModal from "@/components/projects/ProjectModal";
 import { FaGithub } from "react-icons/fa";
+import { Badge } from "../ui/badge";
 
 const fadeInUp = {
    initial: { y: 20, opacity: 0 },
@@ -78,12 +79,9 @@ export default function ProjectsSection() {
                            </p>
                            <div className="flex flex-wrap gap-2 mt-4">
                               {project.languages.map((tech) => (
-                                 <span
-                                    key={tech}
-                                    className="px-3 py-1 text-sm rounded-full bg-primary/10 text-primary-foreground"
-                                 >
+                                 <Badge variant="outline" key={tech}>
                                     {tech}
-                                 </span>
+                                 </Badge>
                               ))}
                            </div>
                         </CardContent>
