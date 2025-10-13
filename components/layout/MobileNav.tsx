@@ -4,7 +4,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
 import { portfolio } from "@/entities/const";
-import Link from "next/link";
+import { scrollToSection } from "@/lib/scroll";
 import { useState } from "react";
 
 export default function MobileNav() {
@@ -21,14 +21,16 @@ export default function MobileNav() {
          <SheetContent side="right" className="w-[300px] sm:w-[400px]">
             <nav className="flex flex-col gap-4">
                {Object.entries(portfolio.data.naveBar).map(([key, value]) => (
-                  <Link
+                  <button
                      key={key}
-                     href={`#${key}`}
-                     className="block px-2 py-1 text-lg hover:text-primary transition"
-                     onClick={() => setIsOpen(false)}
+                     onClick={() => {
+                        scrollToSection(key);
+                        setIsOpen(false);
+                     }}
+                     className="block px-2 py-1 text-lg hover:text-primary transition text-left"
                   >
                      {value}
-                  </Link>
+                  </button>
                ))}
             </nav>
          </SheetContent>

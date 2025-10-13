@@ -34,7 +34,6 @@
       ],
       "naveBar": {
          "home": "Início",
-         "aboutMe": "Sobre Mim",
          "skills": "Skills",
          "timeline": "Timeline",
          "projects": "Projetos"
@@ -93,7 +92,7 @@
          "resume": "Olá! Me chamo Lucas Ferreira Maia, tenho 20 anos e moro em Campina Grande - PB.  Atualmente, estou em busca da minha primeira oportunidade como desenvolvedor, onde eu possa aprender ainda mais, ganhar experiência prática e contribuir d para projetos.",
          "buttons": {
             "cv": "Meu CV",
-            "aboutMe": "Sobre Mim"
+            "projects": "Projetos"
          }
       },
       "projects": [

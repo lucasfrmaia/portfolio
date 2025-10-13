@@ -5,7 +5,6 @@ export const portfolio = portfolioData;
 
 export const CSectionNames = {
    main: "main",
-   aboutMe: "aboutMe",
    skills: "skills",
    timeline: "timeline",
    projects: "projects",

@@ -4,13 +4,13 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
-import Link from "next/link";
 import { motion } from "framer-motion";
 import MobileNav from "./MobileNav";
+import { scrollToSection } from "@/lib/scroll";
+import Link from "next/link";
 
 const navItems = {
    home: "Início",
-   aboutMe: "Sobre Mim",
    skills: "Skills",
    timeline: "Timeline",
    projects: "Projetos",
@@ -35,18 +35,18 @@ export default function Header() {
                href="/"
                className="text-xl font-bold hover:text-primary transition"
             >
-               Portfolio
+               Lucas Maia
             </Link>
 
             <div className="hidden md:flex items-center space-x-8">
                {Object.entries(navItems).map(([key, value]) => (
-                  <Link
+                  <button
                      key={key}
-                     href={`#${key}`}
+                     onClick={() => scrollToSection(key)}
                      className="text-sm hover:text-primary transition"
                   >
                      {value}
-                  </Link>
+                  </button>
                ))}
             </div>
 

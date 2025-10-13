@@ -14,7 +14,10 @@ const fadeInUp = {
 
 export default function HeroSection() {
    return (
-      <section className="min-h-screen flex items-center justify-center bg-background pt-16">
+      <section
+         id="home"
+         className="min-h-screen flex items-center justify-center bg-background pt-16"
+      >
          <div className="container px-4 flex flex-col lg:flex-row items-center justify-between">
             <motion.div
                className="flex-1 text-center lg:text-left"
@@ -62,7 +65,7 @@ export default function HeroSection() {
 
                   <Button asChild variant="secondary" size="lg">
                      <Link href="#projects">
-                        {portfolio.data.about.buttons.aboutMe}
+                        {portfolio.data.about.buttons.projects}
                      </Link>
                   </Button>
                </motion.div>

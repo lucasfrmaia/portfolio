@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import { cn } from "../lib/utils";
 import { ThemeProvider } from "@/components/theme/theme-provider";
 import Header from "@/components/layout/Header";
+import ScrollToTop from "@/components/ui/ScrollToTop";
 
 const inter = Inter({
    subsets: ["latin"],
@@ -75,13 +76,14 @@ export default function RootLayout({
    children: React.ReactNode;
 }) {
    return (
-      <html lang="pt" className={inter.variable}>
+      <html lang="pt" className={cn(inter.variable, "scroll-smooth")}>
          <body
             className={cn("min-h-screen bg-background font-sans antialiased")}
          >
             <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
                <Header />
                {children}
+               <ScrollToTop />
             </ThemeProvider>
          </body>
       </html>

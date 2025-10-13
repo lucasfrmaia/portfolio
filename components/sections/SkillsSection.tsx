@@ -81,7 +81,7 @@ export default function SkillsSection() {
    ];
 
    return (
-      <section className="py-24 bg-background/80">
+      <section id="skills" className="py-24 bg-background/80">
          <div className="container px-4">
             <motion.div
                initial={{ opacity: 0, y: 20 }}
