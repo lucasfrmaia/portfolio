@@ -16,7 +16,9 @@ export const metadata: Metadata = {
    title: "Lucas Portifólio",
    description:
       "Explore meu portfólio e descubra uma gama de projetos. Apresento uma variedade de trabalhos, como  projetos webs, bots para discord e sistemas.",
-   icons: "../images/portfolio-icon.png",
+   icons: {
+      icon: "/images/portfolio-icon.png",
+   },
    authors: {
       name: "Lucas Ferreira Maia",
    },
