@@ -17,7 +17,7 @@
             "title": "E-Cidade - Desenvolvedor Frontend",
             "company": "Núcleo de Tecnologias Estratégicas em Saúde (NUTES)",
             "period": "11/04/2025 - 02/10/2025",
-            "description": "Atuei na manutenção em um sistema legados em PHP (E-cidade), utilizada por prefeituras para gestão pública. Responsável por corrigir bugs, aprimorar interfaces e implementar novas funcionalidades."
+            "description": "Atuei na manutenção em um sistema legados em PHP (E-cidade), utilizada por prefeituras para gestão pública. Responsável por resolver tasks repassadas pelo lider de projeto, além disso tive um reconhecimento por conseguir subir o ambiente sem precisar do banco de dados de produção."
          },
          {
             "title": "DataSUS - Engenheiro de Dados",
@@ -89,7 +89,7 @@
          "profession": {
             "profession": "Desenvolvedor de Software/Engenharia de Dados"
          },
-         "resume": "Olá! Me chamo Lucas Ferreira Maia, tenho 20 anos e moro em Campina Grande - PB.  Atualmente, estou em busca da minha primeira oportunidade como desenvolvedor, onde eu possa aprender ainda mais, ganhar experiência prática e contribuir d para projetos.",
+         "resume": "Olá! Me chamo Lucas Ferreira Maia, tenho 20 anos e moro em Campina Grande - PB.  Atualmente, estou em busca da minha primeira oportunidade como desenvolvedor, onde eu possa aprender ainda mais, ganhar experiência prática e contribuir de para projetos.",
          "buttons": {
             "cv": "Meu CV",
             "projects": "Projetos"
@@ -121,15 +121,6 @@
             ],
             "description": "O projeto GitHub Profile é uma aplicação web desenvolvida com Next.js que permite buscar dados de usuários do GitHub de forma simplificada. Com esta aplicação, você pode obter informações básicas sobre um usuário do GitHub, como nome, foto de perfil, número de seguidores e repositórios públicos.",
             "languages": ["TypeScript", "NextJs"]
-         },
-         {
-            "name": "WikiDarius (Construção)",
-            "liveDemo": "https://wikidarius.vercel.app/",
-            "images": [
-               "https://i.pinimg.com/originals/6f/93/50/6f93508f78319faf2a9929632b3fc041.jpg"
-            ],
-            "description": "WikiDarius é uma plataforma online dedicada a criar uma comunidade de jogadores apaixonados de League of Legends (LoL), com um foco especial no campeão Darius.",
-            "languages": ["TypeScript", "MongoDB", "NextJs"]
          },
          {
             "name": "Blog",
