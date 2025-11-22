@@ -88,9 +88,9 @@ export default function ProjectsSection() {
                                  </Link>
                               </Button>
                            )}
-                           {project.liveDemo && (
+                           {project?.liveDemo && (
                               <Button size="sm" asChild>
-                                 <Link href={project.liveDemo} target="_blank">
+                                 <Link href={project?.liveDemo} target="_blank">
                                     <ExternalLink className="h-4 w-4 mr-2" />{" "}
                                     Demo
                                  </Link>

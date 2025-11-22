@@ -101,6 +101,7 @@
             "github": "https://github.com/lucasfrmaia/cc-uepb",
             "images": ["/images/projects/cc-uepb/Screenshot_1.jpg"],
             "description": "Todos os meus exercícios e projetos feitos ao longo do curso de ciências da computação da UEPB",
+            "liveDemo": "",
             "languages": ["Python", "Java", "C"]
          },
          {
