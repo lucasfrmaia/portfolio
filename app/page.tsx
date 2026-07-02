@@ -7,7 +7,7 @@ import TimelineSection from "@/components/sections/TimelineSection";
 export default function App() {
    return (
       <>
-         <main className="space-y-24">
+         <main>
             <HeroSection />
             <SkillsSection />
             <TimelineSection />

@@ -10,8 +10,9 @@ import {
    SiJavascript,
    SiExpress,
 } from "react-icons/si";
+import { ReactNode } from "react";
 
-const techIcons: { [key: string]: JSX.Element } = {
+const techIcons: { [key: string]: ReactNode } = {
    Java: <FaJava className="h-3 w-3" />,
    NodeJs: <FaNodeJs className="h-3 w-3" />,
    Python: <FaPython className="h-3 w-3" />,
@@ -31,8 +32,11 @@ interface LanguageBadgeProps {
 
 export default function LanguageBadge({ name, className }: LanguageBadgeProps) {
    return (
-      <Badge variant="outline" className={className}>
-         {techIcons[name] && <span className="mr-1.5">{techIcons[name]}</span>}
+      <Badge
+         variant="outline"
+         className={`font-mono text-[11px] px-2 py-0.5 border-border text-muted-foreground hover:border-primary/40 hover:text-foreground transition-colors ${className}`}
+      >
+         {techIcons[name] && <span className="mr-1">{techIcons[name]}</span>}
          {name}
       </Badge>
    );

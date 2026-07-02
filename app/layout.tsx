@@ -1,19 +1,25 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { JetBrains_Mono, Inter } from "next/font/google";
 import { cn } from "../lib/utils";
 import { ThemeProvider } from "@/components/theme/theme-provider";
 import Header from "@/components/layout/Header";
 import ScrollToTop from "@/components/ui/ScrollToTop";
 
+const jetbrainsMono = JetBrains_Mono({
+   subsets: ["latin"],
+   display: "swap",
+   variable: "--font-mono",
+});
+
 const inter = Inter({
    subsets: ["latin"],
    display: "swap",
-   variable: "--font-inter",
+   variable: "--font-sans",
 });
 
 export const metadata: Metadata = {
-   title: "Lucas Portifólio",
+   title: "Lucas Maia — Software Developer",
    description:
       "Explore meu portfólio e descubra uma gama de projetos. Apresento uma variedade de trabalhos, como  projetos webs, bots para discord e sistemas.",
    icons: {
@@ -78,9 +84,19 @@ export default function RootLayout({
    children: React.ReactNode;
 }) {
    return (
-      <html lang="pt" className={cn(inter.variable, "scroll-smooth")}>
+      <html
+         lang="pt"
+         suppressHydrationWarning
+         className={cn(
+            jetbrainsMono.variable,
+            inter.variable,
+            "scroll-smooth"
+         )}
+      >
          <body
-            className={cn("min-h-screen bg-background font-sans antialiased")}
+            className={cn(
+               "min-h-screen bg-background font-sans antialiased"
+            )}
          >
             <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
                <Header />

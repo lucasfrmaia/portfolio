@@ -13,13 +13,13 @@ export default function MobileNav() {
    return (
       <Sheet open={isOpen} onOpenChange={setIsOpen}>
          <SheetTrigger asChild>
-            <Button variant="ghost" size="icon" className="md:hidden">
-               <Menu className="h-6 w-6" />
+            <Button variant="ghost" size="icon" className="md:hidden rounded-lg">
+               <Menu className="h-5 w-5" />
                <span className="sr-only">Toggle menu</span>
             </Button>
          </SheetTrigger>
-         <SheetContent side="right" className="w-[300px] sm:w-[400px]">
-            <nav className="flex flex-col gap-4">
+         <SheetContent side="right" className="w-[280px] sm:w-[340px] bg-card">
+            <nav className="flex flex-col gap-1 mt-8">
                {Object.entries(portfolio.data.naveBar).map(([key, value]) => (
                   <button
                      key={key}
@@ -27,9 +27,10 @@ export default function MobileNav() {
                         scrollToSection(key);
                         setIsOpen(false);
                      }}
-                     className="block px-2 py-1 text-lg hover:text-primary transition text-left"
+                     className="flex items-center gap-3 px-4 py-3 text-base font-mono text-muted-foreground hover:text-foreground hover:bg-muted/50 rounded-lg transition-all text-left group"
                   >
-                     {value}
+                     <span className="text-primary text-sm">{">"}</span>
+                     <span>{value}</span>
                   </button>
                ))}
             </nav>

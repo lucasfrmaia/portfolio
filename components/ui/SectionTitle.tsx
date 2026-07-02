@@ -14,25 +14,29 @@ export default function SectionTitle({
    className,
 }: SectionTitleProps) {
    return (
-      <motion.h2
+      <motion.div
          className={cn(
-            "text-3xl md:text-4xl font-bold text-center relative w-fit mx-auto",
+            "flex items-center gap-3 w-fit mx-auto mb-12",
             className
          )}
          initial={{ opacity: 0, y: 20 }}
          whileInView={{ opacity: 1, y: 0 }}
          viewport={{ once: true }}
       >
-         <h1 className="bg-gradient-to-r from-purple-500 to-purple-800 bg-clip-text text-transparent font-mono mb-4">
+         <span className="text-primary font-mono text-xl md:text-2xl select-none">
+            {"//"}
+         </span>
+         <h2 className="text-3xl md:text-4xl font-mono font-bold tracking-tight text-foreground">
             {children}
-         </h1>
+         </h2>
          <motion.div
-            className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-purple-500 to-purple-800 rounded-full"
+            className="hidden sm:block h-[2px] w-16 bg-gradient-to-r from-primary to-transparent rounded-full mt-1"
             initial={{ scaleX: 0 }}
             whileInView={{ scaleX: 1 }}
             viewport={{ once: true }}
-            transition={{ delay: 0.3 }}
+            transition={{ delay: 0.3, duration: 0.5 }}
+            style={{ transformOrigin: "left" }}
          />
-      </motion.h2>
+      </motion.div>
    );
 }
