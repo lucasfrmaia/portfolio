@@ -83,10 +83,10 @@ export default function HeroSection() {
                      size="lg"
                      className="font-mono bg-primary hover:bg-primary/90 text-primary-foreground"
                   >
-                     <Link href="/CV.pdf" target="_blank">
+                     <a href="/CV.pdf" download="CV.pdf" target="_blank" rel="noopener noreferrer">
                         <Download className="h-4 w-4 mr-2" />
                         {portfolio.data.about.buttons.cv}
-                     </Link>
+                     </a>
                   </Button>
 
                   <Button

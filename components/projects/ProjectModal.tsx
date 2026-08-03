@@ -41,7 +41,7 @@ export default function ProjectModal({
 
    return (
       <Dialog open={isOpen} onOpenChange={onClose}>
-         <DialogContent className="max-w-3xl w-[90vw] p-0 bg-card border-border overflow-hidden">
+         <DialogContent className="max-w-3xl w-[90vw] p-0 bg-card border-border overflow-hidden flex flex-col max-h-[90vh]">
             <DialogTitle className="sr-only">{project.name}</DialogTitle>
             <DialogDescription className="sr-only">{project.description}</DialogDescription>
             {/* Editor-style window bar */}
@@ -59,8 +59,10 @@ export default function ProjectModal({
                </div>
             </div>
 
-            {/* Image Carousel */}
-            <div className="relative aspect-video bg-muted/20">
+            {/* Scrollable Content */}
+            <div className="overflow-y-auto flex-1">
+               {/* Image Carousel */}
+               <div className="relative aspect-video bg-muted/20 shrink-0">
                <AnimatePresence mode="wait">
                   <motion.div
                      key={currentImageIndex}
@@ -161,6 +163,7 @@ export default function ProjectModal({
                      </Button>
                   )}
                </div>
+            </div>
             </div>
          </DialogContent>
       </Dialog>
