@@ -28,6 +28,36 @@ const nextConfig = {
          },
       ],
    },
+   async headers() {
+      return [
+         {
+            source: "/cv.pdf",
+            headers: [
+               {
+                  key: "Content-Disposition",
+                  value: 'attachment; filename="cv.pdf"',
+               },
+               {
+                  key: "Content-Type",
+                  value: "application/pdf",
+               },
+            ],
+         },
+         {
+            source: "/CV.pdf",
+            headers: [
+               {
+                  key: "Content-Disposition",
+                  value: 'attachment; filename="cv.pdf"',
+               },
+               {
+                  key: "Content-Type",
+                  value: "application/pdf",
+               },
+            ],
+         },
+      ];
+   },
 };
 
 module.exports = nextConfig;
